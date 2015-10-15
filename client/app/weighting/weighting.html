@@ -1,0 +1,21 @@
+<div class="data-table-container" ng-controller="weightingCtrl as wc">
+	<header class="data-table-header">
+		<div class="data-table-header__label">
+			<span id="w" class="fs-title">Взешивание</span>
+		</div>
+	</header>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>Дата и время</th>
+				<th>Масса, кг</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="row in wc.weightings">
+				<td><span ng-bind="row.date"></span></td>
+				<td><span ng-bind="row.w"></span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
